@@ -1,0 +1,93 @@
+.margin_inline {
+  margin-inline: 15px;
+}
+
+.panel-heading {
+  background-color: var(--color_black);
+  height: 7.1rem;
+  color: var(--color_white);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0 15px;
+}
+
+.about_text {
+  margin-inline: 15px;
+}
+
+.about_us_section {
+  width: 84.5rem;
+  border: 2px solid var(--color_lightGray);
+  border-radius: 1%;
+  box-shadow: 5px 5px 10px var(--color_lightGray);
+  overflow: hidden;
+}
+
+.container_sub {
+  display: flex;
+  gap: 3rem;
+}
+
+aside {
+  width: 26.2rem;
+  height: 45.4rem;
+  border: 1px solid var(--color_lightGray);
+  border-radius: 0.4rem;
+  box-shadow: 5px 5px 10px var(--color_lightGray);
+  nav {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 26.2rem;
+        height: 4.1rem;
+        a {
+          padding-inline: 15px;
+          height: 4.1rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+/* =================== */
+
+aside nav ul li:first-child a {
+  color: var(--color_white);
+  background-color: #970074;
+  transition: background-color 0.3s ease;
+}
+
+aside nav ul li a {
+  color: #555555;
+}
+
+aside nav ul li a:hover {
+  background-color: var(--color_primary);
+  color: var(--color_white);
+}
+
+aside nav ul li a.active {
+  background-color: var(--color_primary-hover);
+}
+
+aside nav ul li a.active,
+aside nav ul li a.active:hover {
+  color: var(--color_white);
+}
+
+/* mission vision */
+
+.mission_vision_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.figure_directors {
+  width: 18.1rem;
+  height: 20.1rem;
+}
