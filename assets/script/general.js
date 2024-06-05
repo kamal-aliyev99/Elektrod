@@ -18,3 +18,10 @@ document.addEventListener("click", (e) => {
     !headerGroups.contains(e.target) && headerGroupDropdown.classList.remove("active");
     !headerLang.contains(e.target) && headerLangMenu.classList.remove("active");;
 })
+
+const iconHamburger = document.querySelector(".icon-hamburger");
+
+iconHamburger.addEventListener("click", () => {
+    iconHamburger.classList.toggle("active")
+})
+
