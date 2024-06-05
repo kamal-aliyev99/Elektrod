@@ -35,6 +35,12 @@ textarea{
     resize: none;
 }
 
+input{
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
 input[type="radio"],
 input[type="checkbox"]{
     display: none;
