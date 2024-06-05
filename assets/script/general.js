@@ -20,8 +20,11 @@ document.addEventListener("click", (e) => {
 })
 
 const iconHamburger = document.querySelector(".icon-hamburger");
+const header = document.querySelector(".header");
 
 iconHamburger.addEventListener("click", () => {
-    iconHamburger.classList.toggle("active")
+    iconHamburger.classList.toggle("active");
+    header.classList.toggle("active");
+
 })
 

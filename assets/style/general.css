@@ -30,10 +30,12 @@ body{
 
 .header{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__top--bcg{
-    background-color: var(--color_black);
+    background-color: var(--color_lightBlack);
     height: 5rem;
     display: flex;
     align-items: center;
@@ -51,6 +53,7 @@ body{
 
 .header__socials{
     display: flex;
+    align-items: center;
     gap: 1.6rem;
 }
 .header__socials i{
@@ -229,6 +232,7 @@ body{
 
 .header__bottom--bcg{
     box-shadow: 0 0.2rem 0.6rem var(--color_lighterGray); 
+    background-color: var(--color_lightestGray);
 }
 .header__bottom{
     height: 6.6rem;
@@ -303,17 +307,86 @@ body{
 
 
 @media screen and (max-width: 768px) {
-    
-    .navbar{
-        display: none;
-    }
 
+    .header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .header.active{
+        height: 100dvh;
+    }
+    
     .icon-hamburger{
         display: inline-block;
     }
 
+                     /* test */
+    main p:hover{
+        color: red;
+    }
+
+    .header__top--bcg{
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        order: 1;
+        transition: 0.3s;
+        /* background-color: var(--color_lightBlack); */
+        pointer-events: none;
+    }
+    .header.active .header__top--bcg{
+        height: 5rem;
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+
+    .header__socials{
+        font-size: 1.8rem;
+        background-color: var(--color_lightBlack);
+        width: 100%;
+        height: 0rem;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s;
+    }
+    .header.active .header__socials{
+        height: 5.4rem;
+    }
+
+    .header__top--right{
+        width: 100%;
+        justify-content: space-between;
+    }
 
 
+    .header__search{
+        order: 1;
+    }
 
+    .navbar{
+        opacity: 0;
+        width: 100%;
+        height: calc(100dvh - 17rem);
+        background-color: var(--color_lightestGray);
+        position: fixed;
+        top: 11.6rem;
+        left: 0;
+        padding: 2rem 5%;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+    .header.active .navbar{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: unset;
+    }
 
 }
