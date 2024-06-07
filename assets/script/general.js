@@ -28,3 +28,15 @@ iconHamburger.addEventListener("click", () => {
 
 })
 
+const navbarProducts = document.querySelector(".navbar__products > a");
+const navbarProductsList = document.querySelector(".navbar__products--list");
+
+navbarProducts.addEventListener("click", () => {
+    navbarProductsList.classList.toggle("active");
+})
+
+
+
+
+
+
