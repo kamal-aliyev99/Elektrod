@@ -41,12 +41,16 @@
                     <form class="header__search">
                         <div class="header__search--input">
                             <input type="text" placeholder="Search product">
+                            <select name="searchSelect" id="headerSearchSelect">
+                                <option value="welding">Welding</option>
+                                <option value="valve">Valve</option>
+                            </select>
                             <div class="header__search--groups">
-                                <span class="header__groups--active">Welding</span>
+                                <span class="header__groups--active" id="headerSearchSelectedGroup">Welding</span>
                                 <i class="fa-solid fa-angle-down"></i>
                                 <ul class="header__groups--dropdown">
-                                    <li>Welding</li>
-                                    <li>Valve</li>
+                                    <li id="headerSearchWelding">Welding</li>
+                                    <li id="headerSearchValve">Valve</li>
                                 </ul>
                             </div>
                         </div>
