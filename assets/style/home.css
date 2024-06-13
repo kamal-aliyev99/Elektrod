@@ -1,0 +1,4 @@
+#homeBanner{
+    width: 100%;
+    height: calc(100dvh - 11.6rem);
+}

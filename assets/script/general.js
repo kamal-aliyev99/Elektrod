@@ -4,7 +4,7 @@ const headerGroups = document.querySelector('.header__search--groups');
 const headerGroupDropdown = document.querySelector('.header__groups--dropdown');
 
 headerGroups.addEventListener("click", () => {
-    setTimeout(() => headerGroupDropdown.classList.toggle("active"), 1000);
+    headerGroupDropdown.classList.toggle("active")
 })
 
 
@@ -65,28 +65,41 @@ headerSearchBtn.addEventListener("click", () => {
 })
 
 
+const headerSearchSelect = document.getElementById("headerSearchSelect");
+const headerSearchSelectedGroup = document.getElementById("headerSearchSelectedGroup");
+const headerSearchWelding = document.getElementById("headerSearchWelding");
+const headerSearchValve = document.getElementById("headerSearchValve");
+
+headerSearchWelding.addEventListener("click", () => {
+    headerSearchSelect.value = "welding"
+    headerSearchSelectedGroup.innerHTML = "Welding"
+})
+
+headerSearchValve.addEventListener("click", () => {
+    headerSearchSelect.value = "valve"
+    headerSearchSelectedGroup.innerHTML = "Valve"
+})
+
+const footerSubsCountry = document.querySelector(".footer__subs--country");
+const footerSubsDropdown = document.querySelector(".footer__subs--dropdown");
+
+footerSubsCountry.addEventListener("click", () => {
+    footerSubsDropdown.classList.toggle("active")
+})
+
+
+
+
+
 
 document.addEventListener("click", (e) => {
     !headerGroups.contains(e.target) && headerGroupDropdown.classList.remove("active");
     !headerLang.contains(e.target) && headerLangMenu.classList.remove("active");
+    !footerSubsCountry.contains(e.target) && footerSubsDropdown.classList.remove("active");
         
     if (!headerSearchBtn.contains(e.target) && !headerSearchInput.contains(e.target)) {
         headerSearchInput.classList.remove("active")
         headerSearchBtn.type = "button"
     }
     
-})
-
-
-const headerSearchSelect = document.getElementById("headerSearchSelect");
-const headerSearchSelectedGroup = document.getElementById("headerSearchSelectedGroup");
-const headerSearchWelding = document.getElementById("headerSearchWelding");
-const headerSearchValve = document.getElementById("headerSearchValve");
-
-headerSearchWelding.addEventListener(() => {
-    headerSearchSelect.value = "welding"
-})
-
-headerSearchValve.addEventListener(() => {
-    headerSearchSelect.value = "valve"
 })
