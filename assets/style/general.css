@@ -597,9 +597,104 @@ body{
 
 
 
+.navBox{
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.navBox > ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+
+.navBox__card{
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+}
+.navBox__card:hover{
+    transform: scale(1.1);
+}
+
+.navBox__card > a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: var(--color_lightestGray);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
 
 
 
+.blogCard{
+    max-width: 36rem;
+    height: 40rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 1.2rem -0.4rem var(--color_lightGray);
+    transition: 0.3s;
+}
+.blogCard:hover{
+    box-shadow: 0 0.2rem 2rem -0.3rem var(--color_lightGray);
+    transform: translateY(-0.4rem);
+}
+
+.blogCard > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blogCard__img{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+.blogCard__img img{
+    transition: 0.3s;
+}
+.blogCard:hover .blogCard__img img{
+    transform: scale(1.1);
+}
+
+.blogCard h5{
+    height: 8rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color_lightBlack);
+    margin: 1.6rem 2rem 0;
+}
+.blogCard p{
+    font-size: 1.4rem;
+    margin: 3rem 2rem 1.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+    /* test */
+main > p {
+    margin-block: 5rem;
+}
+main > p:hover{
+    color: red;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -614,11 +709,6 @@ body{
     
     .icon-hamburger{
         display: inline-block;
-    }
-
-                     /* test */
-    main p:hover{
-        color: red;
     }
 
     .header__top--bcg{
@@ -905,6 +995,11 @@ body{
     }
     .navbar__products--list li:hover{
         background-color: unset;
+    }
+
+
+    .navBox > ul{
+        grid-template-columns: 1fr;
     }
 
 }
