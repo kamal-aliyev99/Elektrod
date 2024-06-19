@@ -650,6 +650,9 @@ body{
     width: 100%;
     height: 100%;
 }
+.blogCard:hover h5 {
+    text-decoration: underline;
+}
 
 .blogCard__img{
     width: 100%;
