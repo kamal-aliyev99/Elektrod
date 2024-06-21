@@ -24,4 +24,3 @@ const iconHamburger = document.querySelector(".icon-hamburger");
 iconHamburger.addEventListener("click", () => {
     iconHamburger.classList.toggle("active")
 })
-
