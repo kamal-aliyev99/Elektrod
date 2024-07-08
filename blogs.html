@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/general.css" />
+    <link rel="stylesheet" href="./assets/style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Elektrod</title>
+  </head>
+<body>
+    <header class="header">
+        <div class="header__top--bcg">
+            <div class="header__top container">
+                <ul class="header__socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+    
+                <div class="header__top--right">
+                    <form class="header__search">
+                        <div class="header__search--input">
+                            <input type="text" placeholder="Search product">
+                            <select name="searchSelect" id="headerSearchSelect">
+                                <option value="welding">Welding</option>
+                                <option value="valve">Valve</option>
+                            </select>
+                            <div class="header__search--groups">
+                                <span class="header__groups--active" id="headerSearchSelectedGroup">Welding</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="header__groups--dropdown">
+                                    <li id="headerSearchWelding">Welding</li>
+                                    <li id="headerSearchValve">Valve</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <button class="header__search--btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="header__lang">
+                        <span>EN</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="header__lang--menu">
+                            <li>
+                                <a href="#">AZ</a>
+                            </li>
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom--bcg">
+            <div class="header__bottom container">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./assets/images/logo/full logo light.png" alt="">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li class="navbar__products">
+                            <a>Products <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="navbar__products--list">
+                                <li>
+                                    <a href="#">Welding Group</a>
+                                </li>
+                                <li>
+                                    <a href="#">Valve Group</a>
+                                </li>
+                                <li>
+                                    <a href="#">Casting Group</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="icon-hamburger"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        
+
+    </main>
+    
+    <footer class="footer">
+
+        <section class="footer__subs container">
+            <p class="footer__subs--header">Be aware of the innovations in Gedik World.</p>
+            <form class="footer__subs--form">
+                <select name="subscribeSelect" id="subscribeSelect">
+                    <option value="azerbaijan">Azerbaijan</option>
+                    <option value="turkey">Turkey</option>
+                </select>
+                <div class="footer__subs--country">
+                    <span class="footer__country--active" id="">Azerbaijan</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="footer__subs--dropdown">
+                        <li>Azerbaijan</li>
+                        <li>Turkey</li>
+                        <li>Russian</li>
+                        <li>ABD</li>
+                        <li>Iran</li>
+                        <li>UK</li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Your E-mail Address">
+                <button class="footer__subs--btn">Send</button>
+            </form>
+        </section>
+
+        <div class="footer__main container">
+            <div>
+                <h5>Corporate</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Our Code of Ethics</a>
+                        </li>
+                        <li>
+                            <a href="#">Quality Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Social Responsibility</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <ul>
+                    <li>
+                        <span>Address :</span>
+                        <span> Ankara Caddesi No: 306 Seyhli</span>
+                    </li>
+                    <li>
+                        <p>Pendik 34906 İSTANBUL</p>
+                        
+                    </li>
+                    <li>
+                        <span>Tel :</span>
+                        <a href="tel:+902163785000"> +90 (216) 378 50 00</a>
+                    </li>
+                    <li>
+                        <span>Fax : </span>
+                        <a href="tel:+902163782044"> +90 (216) 378 20 44</a>
+                    </li>
+                    <li>
+                        <span>E-Mail : </span>
+                        <a href="mailto:gedik@gedik.com.tr"> gedik@gedik.com.tr</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Companies</h5>
+                <ul>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Social Media</h5>
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/script/general.js"></script>
+    <script src="./assets/script/slider.js" type="module"></script>
+  </body>
+</html>

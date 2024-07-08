@@ -37,7 +37,7 @@ body{
     flex-direction: column;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 11;
 }
 
 @media screen and (min-width: 769px) {
@@ -667,16 +667,31 @@ body{
 }
 
 .blogCard h5{
-    height: 8rem;
+    height: 6.6rem;
     font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 500;
     color: var(--color_lightBlack);
     margin: 1.6rem 2rem 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.blogCard__time{
+    color: var(--color_primary);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1.6rem 2rem 1rem;
+}
+.blogCard:hover .blogCard__time{
+    color: var(--color_primary-hover);
 }
 .blogCard p{
     font-size: 1.4rem;
-    margin: 3rem 2rem 1.6rem;
+    margin: 0 2rem 1.6rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -689,15 +704,108 @@ body{
 
 
 
+.breadCrump{
+
+    background-color: var(--color_lightestGray);
+    padding: 0.8rem 1.5rem;
+    margin-top: 1.5rem;
+}
+.breadCrump ul{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.breadCrump ul li:not(li:last-child)::after{
+    content: "/";
+    padding-inline: 0.6rem;
+}
+.breadCrump a:hover{
+    text-decoration: underline;
+}
 
 
-    /* test */
-main > p {
-    margin-block: 5rem;
+.mainBox{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem var(--color_lightGray);
+    margin-block: 6rem;
 }
-main > p:hover{
-    color: red;
+
+.mainbox__heading{
+    width: 100%;
+    height: 7rem;
+    background-color: var(--color_lightBlack);
+    color: var(--color_lightestGray);
+    border-bottom: 1px solid var(--color_lightestGray);
+    padding-inline: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
+
+.mainbox__heading img{
+    width: 2.8rem;
+    height: auto;
+}
+
+.mainBox__banner{
+    width: 100%;
+    height: 18rem;
+}
+
+
+/*   CONTACT FORM   */
+
+.contactForm input{
+    padding: 0.6rem 1.2rem;
+}
+.contactForm textarea{
+    resize: vertical;
+    width: 100%;
+    min-height: 5rem;
+    max-height: 18rem;
+    padding: 0.6rem 1.2rem;
+}
+.contactForm .textarea{
+    line-height: 0;
+}
+.contactForm input,
+.contactForm .textarea{
+    border: 1px solid var(--color_lighterGray);
+    box-shadow: 0 0 0.4rem -0.2rem var(--color_lighterGray);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.contactForm input:hover,
+.contactForm .textarea:hover{
+    box-shadow: 0 0 0.4rem -0.0rem var(--color_lighterGray);
+}
+.contactForm input:focus,
+.contactForm .textarea:has(textarea:focus){
+    border: 1px solid var(--color_primary);
+    box-shadow: 0 0 0.4rem -0.0rem var(--color_lighterGray);
+}
+
+.contactForm button{
+    width: 21rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    background-color: var(--color_primary);
+    color: var(--color_lightestGray);
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 

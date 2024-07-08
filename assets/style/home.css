@@ -3,6 +3,11 @@
     height: calc(100dvh - 11.6rem);
 }
 
+.swiper-button-next,
+.swiper-button-prev{
+    color: var(--color_primary) !important;
+}
+
 .blogPost{
     padding-block: 4.6rem;
 }
@@ -67,7 +72,7 @@ section.contact{
     color: var(--color_lightestGray);
 }
 
-.contact-form{
+.contactForm{
     flex: 1; /* bax */
     display: flex;
     flex-direction: column;
@@ -79,55 +84,17 @@ section.contact{
     box-shadow: 0 0 0.4rem -0.2rem var(--color_lighterGray);
 }
 
-.contact-form label{
+.contactForm label{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
     font-size: 1.4rem;
     font-weight: 700;
 }
-.contact-form input{
-    padding: 0.6rem 1.2rem;
-}
-.contact-form textarea{
-    resize: vertical;
-    width: 100%;
-    min-height: 3rem;
-    max-height: 14rem;
-    padding: 0.6rem 1.2rem;
-}
-.contact-form .textarea{
-    line-height: 0;
-}
-.contact-form input,
-.contact-form .textarea{
-    border: 1px solid var(--color_lighterGray);
-    box-shadow: 0 0 0.4rem -0.2rem var(--color_lighterGray);
-    border-radius: 0.4rem;
-    overflow: hidden;
-    transition: 0.3s;
-}
 
-.contact-form input:hover,
-.contact-form .textarea:hover{
-    box-shadow: 0 0 0.4rem -0.0rem var(--color_lighterGray);
-}
-.contact-form input:focus,
-.contact-form .textarea:has(textarea:focus){
-    border: 1px solid var(--color_primary);
-    box-shadow: 0 0 0.4rem -0.0rem var(--color_lighterGray);
-}
-
-.contact-form button{
-    width: 21rem;
-    padding: 0.8rem 1.2rem;
+.contactForm button{
     margin-inline: auto;
-    border-radius: 0.4rem;
-    background-color: var(--color_primary);
-    color: var(--color_lightestGray);
-    display: grid;
-    place-items: center;
-    margin-top: 1rem;
+    margin-top: 1rem;   
 }
 
 
@@ -169,14 +136,16 @@ section.timeLine{
 .timeLine__slider{
     position: relative;
 }
-.timeLine__slider .swiper-button-prev{   /* BAXX */
-    /* position: absolute;
-    left: -4rem; */
-}
-.timeLine__slider .swiper-button-next{  /* BAXX */
-    /* position: absolute;
-    right: -4rem; */
-}
+/* BAXX */
+/* .timeLine__slider .swiper-button-prev{   
+    position: absolute;
+    left: -4rem;
+} */
+/* Baxx */
+/*.timeLine__slider .swiper-button-next{ 
+     position: absolute;
+    right: -4rem; 
+} */
 
 .timeLine__slider .swiper-slide{
     width: max-content;
@@ -239,7 +208,7 @@ section.timeLine{
         width: 100%;
     }
 
-    .contact-form button{
+    .contactForm button{
         width: min(100%, 21rem);
     }
 
