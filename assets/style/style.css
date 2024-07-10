@@ -27,6 +27,10 @@ img{
     object-fit: cover;
 }
 
+div:has(> img:only-child) {
+    line-height: 0;
+}
+
 ul{
     list-style: none;
 }

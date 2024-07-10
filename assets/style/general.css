@@ -28,6 +28,8 @@ body{
 
 .container{
     width: min(90%, 114rem);
+    max-width: 144rem;
+    width: 90%;
     margin-inline: auto;
 }
 
@@ -733,11 +735,10 @@ body{
 
 .mainbox__heading{
     width: 100%;
-    height: 7rem;
     background-color: var(--color_lightBlack);
     color: var(--color_lightestGray);
     border-bottom: 1px solid var(--color_lightestGray);
-    padding-inline: 1.5rem;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -1108,9 +1109,13 @@ body{
         background-color: unset;
     }
 
-
     .navBox > ul{
         grid-template-columns: 1fr;
+    }
+
+
+    .mainBox{
+        margin-block: 3.5rem 6rem;
     }
 
 }

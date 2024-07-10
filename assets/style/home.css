@@ -41,6 +41,7 @@
 }
 .blogPost__loadMore:hover{
     box-shadow: 0 0 1.2rem 0rem var(--color_lighterGray);
+    color: var(--color_primary-hover);
 }
 
 
