@@ -159,3 +159,12 @@
   padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+  .wires_and_fluxes{
+    width: 100%;
+  }
+  .card_section{
+    grid-template-columns: repeat(auto-fit, minmax(24.6rem, 1fr));
+  }
+}
