@@ -28,20 +28,24 @@
 }
 
 .about_text {
-  margin-inline: 15px;
+  /* margin-inline: 15px; */
 }
 
 .about_us_section {
-  width: 84.5rem;
-  border: 1px solid var(--color_lightGray);
+  flex: 1;
+  /* width: 84.5rem; */
+  /* border: 1px solid var(--color_lightGray);
   border-radius: 1%;
   box-shadow: 5px 5px 10px var(--color_lightGray);
-  overflow: hidden;
+  overflow: hidden; */
+}
+.about_us_section section {
+  padding: 3rem 1.5rem 4rem;
 }
 
 .container_sub {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 aside {
@@ -50,22 +54,26 @@ aside {
   border: 1px solid var(--color_lightGray);
   border-radius: 0.4rem;
   box-shadow: 5px 5px 10px var(--color_lightGray);
+  nav {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 26.2rem;
+        height: 4.1rem;
+        a {
+          padding-inline: 15px;
+          height: 4.1rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
 }
 
-aside nav ul li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 26.2rem;
-  height: 4.1rem;
-}
-
-aside nav ul li a {
-  padding-inline: 15px;
-  height: 4.1rem;
-  display: flex;
-  align-items: center;
-}
+/* =================== */
 
 aside nav ul li:first-child a {
   color: var(--color_white);
@@ -174,5 +182,27 @@ aside nav ul li a.active:hover {
   .directors_grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  aside {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color_lightGray);
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 10px var(--color_lightGray); /* Gölge efekti */
+  }
+
+  aside nav ul li {
+    width: 100%;
+    height: auto;
+  }
+
+  aside nav ul li a {
+    padding-inline: 10px;
+    height: auto;
+    justify-content: center;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
 }
