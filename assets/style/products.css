@@ -59,12 +59,22 @@
   transition: 0.3s;
 }
 
+.products_cards_grid a{
+  width: max-content;
+  height: max-content;
+}
+
 .product_detail_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
+  transition: 0.3s;
+}
+.product_detail_card:hover {
+  box-shadow: 2px 0 2px var(--color_lighterGray),
+    -2px 0 2px var(--color_lighterGray), 0 2px 2px var(--color_lighterGray);
 }
 
 .card_detail {
