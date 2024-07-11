@@ -1,15 +1,16 @@
 .in_page_nav {
   background-color: var(--color_lightestGray);
-  border-radius: 1%;
+  border-radius: 2px;
+}
 
-  ul {
-    display: flex;
-    color: var(--color_black);
-    font-size: 14px;
-    li {
-      margin-inline: 15px;
-    }
-  }
+.in_page_nav ul {
+  display: flex;
+  color: var(--color_black);
+  font-size: 14px;
+}
+
+.in_page_nav ul li {
+  margin-inline: 15px;
 }
 
 .margin_inline {
@@ -49,26 +50,22 @@ aside {
   border: 1px solid var(--color_lightGray);
   border-radius: 0.4rem;
   box-shadow: 5px 5px 10px var(--color_lightGray);
-  nav {
-    ul {
-      li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 26.2rem;
-        height: 4.1rem;
-        a {
-          padding-inline: 15px;
-          height: 4.1rem;
-          display: flex;
-          align-items: center;
-        }
-      }
-    }
-  }
 }
 
-/* =================== */
+aside nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 26.2rem;
+  height: 4.1rem;
+}
+
+aside nav ul li a {
+  padding-inline: 15px;
+  height: 4.1rem;
+  display: flex;
+  align-items: center;
+}
 
 aside nav ul li:first-child a {
   color: var(--color_white);
@@ -93,14 +90,11 @@ aside nav ul li a.active:hover {
   color: var(--color_white);
 }
 
-/* mission vision */
-
 .mission_vision_flex {
   display: flex;
   flex-direction: column;
 }
 
-/* directors */
 .body_card_img {
   width: 18.1rem;
   height: 20.1rem;
@@ -120,13 +114,7 @@ aside nav ul li a.active:hover {
 }
 
 /* Responsive styles */
-@media (max-width: 1200px) {
-  .about_us_section {
-    width: 100%;
-  }
-}
-
-@media (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .panel_heading {
     height: auto;
     flex-direction: column;
@@ -135,6 +123,7 @@ aside nav ul li a.active:hover {
   }
 
   .about_us_section {
+    width: 100%;
     border: none;
     box-shadow: 5px 5px 10px var(--color_lightGray);
   }
@@ -160,21 +149,13 @@ aside nav ul li a.active:hover {
     padding-inline: 10px;
     height: auto;
     justify-content: center;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
 
   .body_card {
     row-gap: 1rem;
   }
-}
 
-@media (max-width: 700px) {
-  .directors_grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
   .directors_grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -189,33 +170,9 @@ aside nav ul li a.active:hover {
   .body_card {
     font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
-}
 
-@media (max-width: 400px) {
   .directors_grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-}
-
-@media (max-width: 760px) {
-  aside {
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--color_lightGray);
-    border-radius: 0.4rem;
-    box-shadow: 5px 5px 10px var(--color_lightGray); /* Gölge efekti */
-  }
-
-  aside nav ul li {
-    width: 100%;
-    height: auto;
-  }
-
-  aside nav ul li a {
-    padding-inline: 10px;
-    height: auto;
-    justify-content: center;
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
 }

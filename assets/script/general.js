@@ -101,5 +101,5 @@ document.addEventListener("click", (e) => {
         headerSearchInput.classList.remove("active")
         headerSearchBtn.type = "button"
     }
-    
+     
 })
