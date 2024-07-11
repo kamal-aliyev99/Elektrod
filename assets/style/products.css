@@ -13,10 +13,11 @@
 }
 
 .unalloyed_electrodes {
-  width: 84rem;
+  flex: 1;
+  /* width: 84rem;
   border: 1px solid var(--color_lighterGray);
   border-radius: 1px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .sub_container {
@@ -81,7 +82,8 @@
 .products_cards_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.1rem, 1fr));
-  gap: 1rem;
+  gap: 3rem 1.5rem;
+  padding: 3rem 1.5rem ;
 }
 
 /* aside */
