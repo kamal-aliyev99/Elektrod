@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  width: min(90%, 114rem);
+  width: min(90%, 114rem) !important;
   max-width: 144rem;
   width: 90%;
   margin-inline: auto;
@@ -805,6 +805,70 @@ body {
     transition: 0.3s;
   }
 }
+
+
+/*    C A R D    */
+
+
+.product_detail_card {
+  width: 19rem;
+  height: 35rem;
+  border: 1px solid var(--color_lighterGray);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  box-shadow: 0 0.2rem 0.8rem -0.2rem var(--color_lightGray);
+  transition: 0.3s;
+}
+
+.product_detail_card:hover {
+  /* box-shadow: 2px 0 2px var(--color_lighterGray),
+    -2px 0 2px var(--color_lighterGray), 0 2px 2px var(--color_lighterGray); */
+    /* box-shadow: 0 0 0.8rem -0.1rem var(--color_lighterGray); */
+    box-shadow: 0 0.2rem 0.8rem 0rem var(--color_lightGray);
+}
+
+.electrode_card_logo {
+  width: 15rem;
+  height: 4rem;
+}
+
+.electrode_card_img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.card_detail button {
+  /* background-color: var(--color_primary-hover); */
+  color: var(--color_white);
+  width: 15rem;
+  height: 3.1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color_primary);
+  box-shadow: 0 0 0.8rem -0.1rem var(--color_lighterGray);
+  transition: 0.3s;
+}
+
+.card_detail button:hover {
+  background-color: var(--color_primary-hover);
+  color: var(--color_white);
+  text-shadow: 0 0 0.2rem var(--color_lightGray);
+  box-shadow: 0 0 1.2rem 0rem var(--color_lighterGray);
+}
+
+.card_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+/*    C A R D   End    */
+
 
 @media screen and (max-width: 768px) {
   /* .header{
