@@ -111,8 +111,8 @@
 }
 
 .wires_and_fluxes {
-  /* flex: 1; */
-  width: 84rem;
+  flex: 1;
+  /* width: 84rem; */
   /* border: 1px solid var(--color_lighterGray);
   border-radius: 1px;
   overflow: hidden;
@@ -124,9 +124,18 @@
   gap: 3rem;
 }
 
-/* ===== content section === */
 .margin_inline {
   margin-inline: 15px;
+}
+
+/* ===== content section === */
+.card_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem 1rem;
+  padding: 2rem 1.5rem 3rem;
+  box-sizing: border-box;
 }
 
 .category_detail_image {
@@ -137,6 +146,11 @@
   border: 1px solid var(--color_Gray);
   border-radius: 1px;
 }
+.category_detail_image a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .hover_effect {
   position: relative;
@@ -144,15 +158,16 @@
   width: 100%;
 }
 
-.hover_effect img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 430px;
-  height: 236px;
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s ease, filter 0.3s ease;
+.category_detail_image img {
+  filter: brightness(0.7);
+  object-position: 50% 50%;
+  transition: 0.3s;
 }
+
+.category_detail_image:hover .hover_effect img {
+  object-position: 60% 50%;
+}
+
 
 .hover_content {
   display: flex;
@@ -164,45 +179,28 @@
   left: 1rem;
   transition: all 0.3s ease;
   z-index: 1;
+  color: var(--color_white);
 }
 
-.hover_title {
-  margin-bottom: 0;
-}
+/* .hover_title {
+  
+} */
 
 .hover_description {
-  display: none;
-  margin-bottom: 0;
-}
-
-.category_detail_image:hover .hover_effect img {
-  transform: translate(calc(-50% + 15px), -50%);
-}
-
-.category_detail_image img {
-  filter: brightness(0.7);
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .category_detail_image:hover .hover_description {
-  display: block;
+  height: calc(16px * 1.3);
 }
 
 .category_detail_image:hover .hover_content {
-  bottom: 30%;
-  transform: translateY(50%);
-  left: 1rem;
-  color: var(--color_white);
-  transition: all 0.3s ease;
+  /* color: var(--color_white); */
 }
 
-.card_section {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  box-sizing: border-box;
-}
+
 
 @media screen and (max-width: 768px) {
   .wires_and_fluxes {

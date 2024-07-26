@@ -29,3 +29,17 @@ const timeLineSwiper = new Swiper("#timeLine", {
       // delay: 3000,
   },
 }); 
+
+
+const otherProducts = new Swiper(".other > .swiper", {
+  slidesPerView: 'auto',
+  spaceBetween: 25,
+  loop: false,
+  // navigation: {
+  //   nextEl: ".timeLine__slider .swiper-button-next",
+  //   prevEl: ".timeLine__slider .swiper-button-prev",
+  // },
+  // autoplay: {
+  //     delay: 3000,
+  // },
+}); 

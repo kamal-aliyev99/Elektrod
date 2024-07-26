@@ -46,6 +46,50 @@
 
 
 
+/*                         PRODUCTS                             */
+
+
+.products{
+    padding-block: 4.6rem;
+}
+
+.products h3{
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+} 
+
+.products__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    justify-items: center;
+    gap: 4.6rem 4rem;
+    margin-top: 1.8rem;
+}
+
+.products__loadMore{
+    display: grid;
+    place-items: center;
+    width: max-content;
+    height: 3.4rem;
+    padding-inline: 1.2rem;
+    background-color: var(--color_lightestGray);
+    border: 1px solid var(--color_lighterGray);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.8rem -0.1rem var(--color_lighterGray);
+    margin: 4.6rem auto;
+    transition: 0.3s;
+}
+.products__loadMore:hover{
+    box-shadow: 0 0 1.2rem 0rem var(--color_lighterGray);
+    color: var(--color_primary-hover);
+}
+
+
+/*        PRODUCTS   End          */
+
+
+
 section.about-contact{
     display: flex;
     gap: 10rem;
