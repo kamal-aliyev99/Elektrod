@@ -5,9 +5,7 @@ document.querySelectorAll('.custom_select').forEach(select => {
   
     select.addEventListener('click', () => {
       document.querySelectorAll('.custom_select').forEach(otherSelect => {
-        if (otherSelect !== select) {
-          otherSelect.classList.remove('open');
-        }
+        if (otherSelect !== select) otherSelect.classList.remove('open');
       });
       select.classList.toggle('open');
     });
@@ -16,9 +14,17 @@ document.querySelectorAll('.custom_select').forEach(select => {
       if (e.target.tagName === 'LI') {
         selectText.textContent = e.target.textContent;
         input.value = e.target.dataset.value;
-    }
-});
-select.classList.remove('open');
+        
+        if (select.closest('.custom_select_wrapper').nextElementSibling) {
+          const nextSelect = select.closest('.custom_select_wrapper').nextElementSibling.querySelector('.custom_select');
+          const nextSelectText = nextSelect.querySelector('.custom_select_text');
+          const nextInput = nextSelect.nextElementSibling;
+          nextSelectText.textContent = 'products';
+          nextInput.value = 'option1';
+        }
+        }
+    });
+    select.classList.remove('open'); 
   });
   
   document.addEventListener('click', (e) => {
@@ -27,5 +33,15 @@ select.classList.remove('open');
         select.classList.remove('open');
       });
     }
+  });
+
+
+document.querySelectorAll('.custom_select_wrapper:first-child .custom_options li').forEach(option => {
+    option.addEventListener('click', () => {
+      const secondSelectText = document.querySelector('.custom_select_wrapper:nth-child(3) .custom_select_text');
+      const secondInput = document.querySelector('.custom_select_wrapper:nth-child(3) input');
+      secondSelectText.textContent = 'products';
+      secondInput.value = 'option1';
+    });
   });
   
