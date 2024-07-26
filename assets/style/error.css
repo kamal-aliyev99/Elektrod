@@ -1,0 +1,94 @@
+.notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 920px;
+  width: 100%;
+  text-align: center;
+}
+
+.notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound-404 h1 {
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.notfound p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #189cf0;
+}
+.margin_inline {
+  margin-inline: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .notfound .notfound {
+    padding: 15px;
+  }
+
+  .notfound-404 {
+    height: 100px;
+  }
+
+  .notfound-404 h1 {
+    font-size: clamp(100px, 20vw, 150px);
+  }
+
+  .notfound h2 {
+    font-size: clamp(18px, 4vw, 24px);
+  }
+
+  .notfound p {
+    font-size: clamp(12px, 2.5vw, 14px);
+  }
+
+  .notfound a {
+    padding: 12px 30px;
+    font-size: clamp(10px, 2.5vw, 12px);
+  }
+}
